@@ -1,5 +1,10 @@
 x = 3
 y = 7
 
-print(f"x = {y}")
-print(f"y = {x}")
+# using the temp variable to swap the values of x and y
+temp = x
+x = y
+y = temp
+
+print(f"x = {x}")
+print(f"y = {y}")
