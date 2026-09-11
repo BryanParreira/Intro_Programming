@@ -1,9 +1,9 @@
 from random import randint
-value = randint(0, 1)  # picks a random integer. Either 0 or 1.
 
+value = randint(0, 1)
 guess = int(input("Enter your guess (0 for Heads, 1 for Tails): "))
 
-if value == 0:
+if guess == 0:
     answer = "Heads"
 else:
     answer = "Tails"
