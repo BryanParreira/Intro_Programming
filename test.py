@@ -11,3 +11,4 @@ number = 5
 while number <= 32:
     if number % 2 == 0:
         print(number)
+    number += 1
