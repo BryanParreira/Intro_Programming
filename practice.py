@@ -4,7 +4,8 @@ total = 0
 for number in range(100, 301):
     if number % 3 == 0:
         print(number)
-'''
+
+
 total = 0
 count = 0
 
@@ -17,3 +18,12 @@ while number != 0:
 else:
     if count > 0:
         print(total / count)
+'''
+largest = 0
+number = int(input('Enter a number please : '))
+
+while number >= 0:
+    
+    number = int(input('Enter a number please : '))
+    if number < 0:
+        print('The biggest number is ')
