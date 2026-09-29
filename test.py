@@ -141,7 +141,7 @@ def make_bigger(num1, num2):
 x = 3
 y = 7
 make_bigger(x, y)
-'''
+
 
 
 def is_vowel(letter):
@@ -168,3 +168,15 @@ word_vowels('apple')
 word1 = 'apple'
 word2 = 'bananas'
 word3 = 'watermelon'
+'''
+
+
+def even_number(odd, even):
+    list = []
+    number_list = [10, 15]
+    for number_list in range[odd, even]:
+        if number_list % 2 == 0:
+            list.append(number_list)
+        elif number_list % 2 == 1:
+            pass
+    print(number_list)
