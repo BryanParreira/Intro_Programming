@@ -168,15 +168,65 @@ word_vowels('apple')
 word1 = 'apple'
 word2 = 'bananas'
 word3 = 'watermelon'
-'''
+
 
 
 def even_number(odd, even):
     list = []
-    number_list = [10, 15]
-    for number_list in range[odd, even]:
-        if number_list % 2 == 0:
-            list.append(number_list)
-        elif number_list % 2 == 1:
-            pass
-    print(number_list)
+    for number in range(odd, even):
+        if number % 2 == 0:
+            list.append(number)
+        # elif number % 2 == 1:
+         #   pass
+    print(list)
+
+
+even_number(10, 15)
+
+
+
+lyst1 = ['a', 'b', 'c']
+lyst2 = lyst1
+lyst3 = []
+
+for element in lyst1:
+    lyst3.append(element)
+
+lyst4 = []
+
+index = 0
+while index < len(lyst1):
+    lyst4.append(lyst1[index])
+    index += 1
+print(lyst4)
+
+
+for element in lyst1:
+    lyst4.append(element)
+
+
+
+lyst = ['Bryan', 'Landon', 'Wyatt', 'Jonah', 'Matt']
+
+
+def new_lyst(contain, doesnt):
+    for name in range(contain, doesnt):
+        if len(name) >= 5:
+
+
+
+
+def new_lys
+
+
+total = 0
+for i in range(1, 6, 2):
+    total += 1
+print(total)
+'''
+x = 10
+count = 0
+while x > 1:
+    x = x // 2
+    count += 1
+print(count)
