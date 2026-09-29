@@ -1,4 +1,3 @@
-
 def ascending_order(num_1, num_2, num_3):
     if num_1 <= num_2 and num_1 <= num_3:
         smallest = num_1
