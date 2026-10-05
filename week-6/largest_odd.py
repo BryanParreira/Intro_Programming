@@ -1,3 +1,4 @@
+'''
 def largest_odd(numbers):
     result = -1
     for n in numbers:
@@ -8,3 +9,17 @@ def largest_odd(numbers):
 print(largest_odd([3, 7, 2, 1, 7, 9, 10, 13]))
 print(largest_odd([2, 4, 6, 8]))
 print(largest_odd([0, 19, 18973623]))
+'''
+
+
+def largest_odd(numbers):
+    result = -1
+    n = numbers
+    while n <= numbers:
+        if n % 2 == 0:
+            return result
+        n += 1
+    return n
+
+
+print(largest_odd([3, 5, 7, 11]))
