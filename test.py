@@ -223,10 +223,62 @@ total = 0
 for i in range(1, 6, 2):
     total += 1
 print(total)
-'''
-x = 10
+
+
+
+def hamming_distance(str1, str2):
+    if len(str1) != len(str2):
+        return "The strings must be the same length"
+    distance = 0
+    for i in range(len(str1)):
+        if str1[i] != str2[i]:
+            distance = distance + 1
+    return distance
+
+
+print(hamming_distance("cat", "cut"))   # 1
+print(hamming_distance("ab", "abc"))    # The strings must be the same length
+
+
+
 count = 0
-while x > 1:
-    x = x // 2
-    count += 1
+for n in range(50, 517):
+    if n % 2 == 1:
+        count += 1
+
 print(count)
+
+
+total = 0
+
+number = int(input('Give me a integer'))
+
+while number >= 0:
+    total += number
+    number = int(input('Give me another integer: '))
+print(total)
+
+r = int(input('give me a number: '))
+c = int(input('give me a number: '))
+
+for row in range(r):
+    for col in range(c):
+        print(col * row, end=" ")
+    print()
+'''
+
+
+def pyramid(h, b):
+    return h * b
+
+
+result = pyramid(6, 8)
+print(result)
+
+
+def pyramid(h, b):
+    return h * b
+
+
+result = pyramid(6, 8)
+print(result)
