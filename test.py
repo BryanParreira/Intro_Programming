@@ -266,19 +266,3 @@ for row in range(r):
         print(col * row, end=" ")
     print()
 '''
-
-
-def pyramid(h, b):
-    return h * b
-
-
-result = pyramid(6, 8)
-print(result)
-
-
-def pyramid(h, b):
-    return h * b
-
-
-result = pyramid(6, 8)
-print(result)
