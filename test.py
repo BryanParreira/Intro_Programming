@@ -266,3 +266,7 @@ for row in range(r):
         print(col * row, end=" ")
     print()
 '''
+def greeting(name, age):
+    
+
+print(greeting('Bryan', 23))
