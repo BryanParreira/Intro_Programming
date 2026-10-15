@@ -1,7 +1,7 @@
 def flip_flop(word):
     half = len(word) // 2
     first_half = word[:half]
-    middle = word[half:len(word) - half]  # empty if length is even
+    middle = word[half:len(word) - half] 
     second_half = word[len(word) - half:]
     return second_half + middle + first_half
 

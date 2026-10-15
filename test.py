@@ -265,8 +265,42 @@ for row in range(r):
     for col in range(c):
         print(col * row, end=" ")
     print()
-'''
-def greeting(name, age):
-    
+
+
+
+def greeting(name, age='unknown'):
+    msg = ''
+    msg += f'Hello {name}'
+
+    if age != 'unknown':
+        msg += f'it is cool to be {age} years old'
+
+    return msg
+
 
 print(greeting('Bryan', 23))
+
+
+def measuring(side1, side2 = 'unknown'):
+    if side2 == 'unknown':
+        area = side1 * side1
+    else:
+        area = side1 * side2
+    return area
+
+print(measuring(4), end= ' ')
+print(measuring(3,6))
+
+'''
+guess = int(input("Enter your guess (0 for Heads, 1 for Tails): "))
+from random import randint
+
+def flip_coin(head = 0):
+    value = randint(0, 1)
+    if guess == 0:
+        value = 'Heads'
+    else:
+        value = 'Tails'
+    print(f'The correct answer is {value}')
+
+flip_coin()
