@@ -1,11 +1,11 @@
 def find_factors(num):
-	factors = []
-	
-	for i in range(1, num):
-		if num % i != 0:
-			factors.add(i)
+    factors = []
 
-	return factors
+    for i in range(1, num + 1):
+        if num % i == 0:
+            factors.append(i)
+
+    return factors
 
 # Test the function with a sample input
 print(find_factors(12)) # Expected output: [1, 2, 3, 4, 6, 12]

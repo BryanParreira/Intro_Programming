@@ -1,13 +1,16 @@
 def like_or_dislike(events):
-	state = "like"
-	
-	for event in range(events):
-		if event != state:
-			state = "nothing"
-		else:
-			state = event
-	
-	return state
+    if not events:
+        return "nothing"
+
+    state = events[0]
+
+    for event in events[1:]:
+        if event == state:
+            state = "nothing"
+        else:
+            state = event
+
+    return state
 
 # Test the function with a sample input
 print(like_or_dislike(["dislike"])) # Expected output: "dislike"
