@@ -17,7 +17,7 @@ class AICompany:
     def __init__(self, company_name, founding_year):
         self.company_name = company_name
         self.founding_year = founding_year
-        self.headquarters = ""  # set later with set_headquarters
+        self.headquarters = ""  
         self.llms = []
 
     def get_headquarters(self):
